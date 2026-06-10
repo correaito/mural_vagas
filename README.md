@@ -60,3 +60,15 @@ O sistema foi remodelado, demonstrando a capacidade de modernizar uma base de c�
    docker compose up -d
    ```
 4. Acesse o sistema pelo seu navegador em `http://localhost:8081`.
+
+### 🔑 Como Criar o Primeiro Acesso (Admin)
+
+Por questões de segurança e portfólio limpo, o banco de dados vem completamente vazio de usuários (sem senhas padrão em código-fonte). 
+
+Para criar o seu **primeiro usuário administrador**, com o Docker rodando, abra um novo terminal e execute o seguinte comando inserindo direto no MySQL do contêiner:
+
+```bash
+docker compose exec db mysql -u root -proot corre034_wordpress -e "INSERT INTO user (id, usuario, senha) VALUES (1, 'admin', 'admin123');"
+```
+
+Pronto! Agora você pode acessar o Painel Administrativo usando `admin` e `admin123`. Os próximos administradores você pode cadastrar direto pela tela amigável de **Gerenciar Usuários** dentro do painel!

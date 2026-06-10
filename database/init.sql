@@ -35,12 +35,8 @@ CREATE TABLE `user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Fazendo dump de dados para tabela `user`
+-- Nenhum usuário inserido por padrão. Crie via CLI conforme README.
 --
-
-INSERT INTO `user` (`id`, `usuario`, `senha`) VALUES
-(1, 'correaito', 'ito123');
-
 -- --------------------------------------------------------
 
 --
