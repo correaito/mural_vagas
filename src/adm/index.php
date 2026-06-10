@@ -28,6 +28,20 @@ $vagasAprovadas = $queryVagasAprovadas->fetchColumn();
 $queryTotalUsers = $pdo->query("SELECT COUNT(*) FROM user");
 $totalUsers = $queryTotalUsers->fetchColumn();
 
+// Gráfico de Vagas por Mês (Ano Atual)
+$anoAtual = date('Y');
+$queryGrafico = $pdo->prepare("SELECT MONTH(data) as mes, COUNT(*) as total FROM vaga WHERE YEAR(data) = :ano GROUP BY MONTH(data)");
+$queryGrafico->bindParam(':ano', $anoAtual);
+$queryGrafico->execute();
+$vagasPorMesRaw = $queryGrafico->fetchAll(PDO::FETCH_KEY_PAIR);
+
+// Preencher array com 12 meses (0 para meses sem vagas)
+$vagasPorMes = [];
+for ($i = 1; $i <= 12; $i++) {
+    $vagasPorMes[] = isset($vagasPorMesRaw[$i]) ? $vagasPorMesRaw[$i] : 0;
+}
+$dadosGrafico = implode(", ", $vagasPorMes);
+
 include("includes/header.php");
 ?>
 
@@ -167,7 +181,7 @@ var myLineChart = new Chart(ctxArea, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 10, 5, 15, 10, 20, 15, 25, 20, 30, 25, <?php echo $totalVagas; ?>],
+      data: [<?php echo $dadosGrafico; ?>],
     }],
   },
   options: {
