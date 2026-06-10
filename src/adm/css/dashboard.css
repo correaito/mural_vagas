@@ -14,7 +14,7 @@ body {
     min-height: calc(100vh - 61px);
     width: 250px;
     margin-left: -15rem;
-    background: linear-gradient(to bottom, #7B96A1, #0F1F34);
+    background: linear-gradient(to bottom, #2A4365, #0F1F34);
     color: #fff;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     display: flex;
