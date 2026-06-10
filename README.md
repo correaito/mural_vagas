@@ -72,3 +72,25 @@ docker compose exec db mysql -u root -proot corre034_wordpress -e "INSERT INTO u
 ```
 
 Pronto! Agora você pode acessar o Painel Administrativo usando `admin` e `admin123`. Os próximos administradores você pode cadastrar direto pela tela amigável de **Gerenciar Usuários** dentro do painel!
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas!
+
+1. Faça um **Fork** do projeto
+2. Crie uma **Branch** para sua feature (`git checkout -b feature/NovaFeature`)
+3. Faça o **Commit** (`git commit -m 'Adicionando NovaFeature'`)
+4. Faça o **Push** (`git push origin feature/NovaFeature`)
+5. Abra um **Pull Request**
+
+---
+
+## 📄 Licença
+
+Este projeto é disponibilizado livremente como peça de portfólio e estudo. Sinta-se livre para clonar, explorar e se inspirar no código.
+
+---
+
+Desenvolvido com ❤️ para solucionar problemas reais e apoiar a comunidade local com oportunidades de emprego.
