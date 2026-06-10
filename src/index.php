@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -61,9 +62,15 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link text-white display-4" data-toggle="modal" data-target="#logarnoadm" href="">
-            <i class="fas fa-user"></i>&nbsp;Login
-          </a>
+          <?php if(isset($_SESSION['id'])): ?>
+            <a class="nav-link link text-white display-4" href="adm/index.php">
+              <i class="fas fa-user-shield"></i>&nbsp;Painel Admin
+            </a>
+          <?php else: ?>
+            <a class="nav-link link text-white display-4" data-toggle="modal" data-target="#logarnoadm" href="">
+              <i class="fas fa-user"></i>&nbsp;Login
+            </a>
+          <?php endif; ?>
         </li>
         <li class="nav-item">
           <a class="nav-link link text-white display-4" href="index.php#form1-3">

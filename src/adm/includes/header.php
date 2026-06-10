@@ -34,7 +34,7 @@
                 <span class="mr-3 text-dark font-weight-bold">
                     <i class="fas fa-user-circle"></i> Olá, <?php echo isset($usuario) ? $usuario : 'Admin'; ?>
                 </span>
-                <a href="../index.php" class="btn btn-outline-secondary btn-sm">Sair</a>
+                <a href="logout.php" class="btn btn-outline-secondary btn-sm">Sair</a>
             </div>
         </div>
     </nav>
@@ -63,6 +63,9 @@
             </a>
             <a href="extimage_adm.php" class="list-group-item list-group-item-action">
                 <i class="fas fa-file-image"></i> Extração OCR
+            </a>
+            <a href="usuarios.php" class="list-group-item list-group-item-action">
+                <i class="fas fa-users"></i> Gerenciar Usuários
             </a>
             <a href="../index.php" class="list-group-item list-group-item-action mt-auto" target="_blank">
                 <i class="fas fa-external-link-alt"></i> Ver Portal Público

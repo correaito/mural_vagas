@@ -27,6 +27,7 @@ O sistema foi remodelado, demonstrando a capacidade de modernizar uma base de c�
 
 ### ⚙️ Funcionalidades de Moderação
 - Administradores agora possuem um formulário limpo de **Postagem Direta**, inserindo vagas imediatamente no banco de dados (`status='liberado'`), pulando a esteira de aprovação (pendentes).
+- **Gerenciamento de Usuários (CRUD):** Criada uma nova área administrativa para adicionar, visualizar, editar e remover outros administradores do painel de forma segura e padronizada.
 
 ---
 
