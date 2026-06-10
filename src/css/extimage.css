@@ -1,0 +1,89 @@
+#log > div {
+  color: #313131;
+  border-top: 1px solid #dadada;
+  padding: 9px;
+  display: flex;
+}
+#log > div:first-child {
+  border: 0;
+}
+.status {
+  min-width: 250px;
+}
+#log {
+  border: 1px solid #dadada;
+  padding: 10px;
+  margin-top: 20px;
+  min-height: 100px;
+}
+body {
+  font-family: sans-serif;
+  margin: 30px;
+}
+progress {
+  display: block;
+  width: 100%;
+  transition: opacity 0.5s linear;
+}
+progress[value="1"] {
+  opacity: 0.5;
+}
+
+.cid-qTkzRZLJNu button.navbar-toggler .hamburger span {
+
+  background-color: black;
+}
+
+
+.text-white {
+  color: black !important;
+}
+
+div.dt-buttons {
+  position: relative;
+  float: left;
+}
+
+.cid-qX4WeoIZP9 .dataTables_filter input {
+
+  border-radius: 3px;
+}
+
+
+
+table.dataTable td
+{
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+}
+
+table.dataTable th
+{
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+}
+
+
+.btn-secondary, .btn-secundary:active {
+  background-color: black !important;
+  border-color: black !important;
+  color: white !important;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary.active {
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
+  position: absolute;
+  bottom: 0.3em;
+  display: block;
+  opacity: 0.3;
+}
